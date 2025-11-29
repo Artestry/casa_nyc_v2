@@ -1,0 +1,208 @@
+import { Borough, Listing } from './types';
+
+export const MOCK_LISTINGS: Listing[] = [
+  {
+    id: '101',
+    development_name: 'Gotham Point (South Tower)',
+    address: '57-28 2nd Street',
+    borough: Borough.Queens,
+    neighborhood: 'Hunters Point',
+    total_units: 1132,
+    affordable_units: 847,
+    min_income: 26500,
+    max_income: 165000,
+    rent_range: [598, 2600],
+    application_deadline: '2025-01-30',
+    ami_percentage: 80,
+    amenities: ['24-hour Attended Lobby', 'Fitness Center', 'Roof Terrace', 'Co-working Lounge'],
+    accessibility_features: ['Elevator', 'Wheelchair Accessible', 'Visual/Hearing Units'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/2645'
+  },
+  {
+    id: '102',
+    development_name: 'Bronx Point',
+    address: '575 Exterior Street',
+    borough: Borough.Bronx,
+    neighborhood: 'Lower Concourse',
+    total_units: 542,
+    affordable_units: 542,
+    min_income: 18500,
+    max_income: 134000,
+    rent_range: [397, 1800],
+    application_deadline: '2024-12-15',
+    ami_percentage: 50,
+    amenities: ['Children\'s Playroom', 'Community Lounge', 'On-site Laundry', 'Bike Storage'],
+    accessibility_features: ['Elevator', 'Accessible Entrance'],
+    pet_policy: 'Pets Allowed (up to 25lbs)',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3821'
+  },
+  {
+    id: '103',
+    development_name: '595 Dean Street',
+    address: '595 Dean Street',
+    borough: Borough.Brooklyn,
+    neighborhood: 'Prospect Heights',
+    total_units: 798,
+    affordable_units: 240,
+    min_income: 56000,
+    max_income: 180000,
+    rent_range: [1500, 3200],
+    application_deadline: '2025-02-28',
+    ami_percentage: 130,
+    amenities: ['Swimming Pool', 'Fitness Club', 'Dog Run', 'In-unit Washer/Dryer'],
+    accessibility_features: ['Elevator', 'Fully Accessible'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3540'
+  },
+  {
+    id: '104',
+    development_name: 'The Suffolk',
+    address: '55 Suffolk Street',
+    borough: Borough.Manhattan,
+    neighborhood: 'Lower East Side',
+    total_units: 378,
+    affordable_units: 95,
+    min_income: 29000,
+    max_income: 98000,
+    rent_range: [800, 1450],
+    application_deadline: '2025-03-01',
+    ami_percentage: 60,
+    amenities: ['Roof Deck', 'Package Room', 'Bike Storage'],
+    accessibility_features: ['Elevator'],
+    pet_policy: 'No Pets',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3912'
+  },
+  {
+    id: '105',
+    development_name: 'Apex Place',
+    address: '62-11 108th Street',
+    borough: Borough.Queens,
+    neighborhood: 'Forest Hills',
+    total_units: 443,
+    affordable_units: 443,
+    min_income: 24000,
+    max_income: 110000,
+    rent_range: [750, 1900],
+    application_deadline: '2024-11-30',
+    ami_percentage: 80,
+    amenities: ['Dishwasher', 'Central Air', 'Parking (Waitlist)'],
+    accessibility_features: ['Elevator', 'Accessible Common Areas'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3100'
+  },
+  {
+    id: '106',
+    development_name: 'Plank Road',
+    address: '662 Pacific Street',
+    borough: Borough.Brooklyn,
+    neighborhood: 'Prospect Heights',
+    total_units: 312,
+    affordable_units: 94,
+    min_income: 48000,
+    max_income: 165000,
+    rent_range: [1300, 2800],
+    application_deadline: '2025-01-15',
+    ami_percentage: 130,
+    amenities: ['Rooftop Terrace', 'Fitness Center', 'Bike Room', 'Concierge'],
+    accessibility_features: ['Elevator', 'Wheelchair Accessible'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/2950'
+  },
+  {
+    id: '107',
+    development_name: 'Sendero Verde',
+    address: '60 East 112th Street',
+    borough: Borough.Manhattan,
+    neighborhood: 'East Harlem',
+    total_units: 700,
+    affordable_units: 700,
+    min_income: 15000,
+    max_income: 85000,
+    rent_range: [350, 1200],
+    application_deadline: '2024-12-31',
+    ami_percentage: 30,
+    amenities: ['Community Garden', 'Computer Lab', 'Social Services', 'Laundry Room'],
+    accessibility_features: ['Elevator', 'Fully Accessible'],
+    pet_policy: 'No Pets',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/2800'
+  },
+  {
+    id: '108',
+    development_name: 'Sea View Apartments',
+    address: '460 Brielle Avenue',
+    borough: Borough.StatenIsland,
+    neighborhood: 'Willowbrook',
+    total_units: 150,
+    affordable_units: 150,
+    min_income: 38000,
+    max_income: 75000,
+    rent_range: [950, 1400],
+    application_deadline: '2025-04-10',
+    ami_percentage: 60,
+    amenities: ['Senior Center', 'Laundry Room', 'Landscaped Grounds', 'Parking'],
+    accessibility_features: ['Elevator', 'Roll-in Showers'],
+    pet_policy: 'Service Animals Only',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3300'
+  },
+  {
+    id: '109',
+    development_name: 'The Max (TFC)',
+    address: '606 West 57th Street',
+    borough: Borough.Manhattan,
+    neighborhood: 'Hell\'s Kitchen',
+    total_units: 1028,
+    affordable_units: 258,
+    min_income: 29500,
+    max_income: 92000,
+    rent_range: [895, 1550],
+    application_deadline: '2025-03-15',
+    ami_percentage: 60,
+    amenities: ['Basketball Court', 'Library', 'Screening Room', 'Terrace'],
+    accessibility_features: ['Elevator', 'Accessible Units Available'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://tfc.com/residential/606w57/availability'
+  },
+  {
+    id: '110',
+    development_name: 'Archer Green',
+    address: '92-23 168th Street',
+    borough: Borough.Queens,
+    neighborhood: 'Jamaica',
+    total_units: 387,
+    affordable_units: 387,
+    min_income: 22000,
+    max_income: 130000,
+    rent_range: [600, 2100],
+    application_deadline: '2025-02-01',
+    ami_percentage: 70,
+    amenities: ['Outdoor Terrace', 'Fitness Room', 'Laundry Room', 'Package Lockers'],
+    accessibility_features: ['Elevator', 'Wide Doorways'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3400'
+  }
+];
+
+// NYC Area Median Income (AMI) 2024 estimates for a 3-person household
+// Based on HUD 2024 limits for New York, NY MSA
+export const AMI_DATA_2024 = [
+  { name: '30% AMI', value: 43500 },
+  { name: '50% AMI', value: 72500 },
+  { name: '80% AMI', value: 116000 },
+  { name: '100% AMI', value: 145000 },
+  { name: '130% AMI', value: 188500 },
+];
+
+export const STEPS = [
+  { id: 1, title: 'Personal Info' },
+  { id: 2, title: 'Housing & Location' },
+  { id: 3, title: 'Financials' },
+  { id: 4, title: 'Access & Submit' }
+];
+
+export const SYSTEM_INSTRUCTION = `You are the CASA NYC Housing Assistant. 
+Your goal is to help New Yorkers navigate the affordable housing lottery (Housing Connect), HPD listings, and Section 8.
+Be concise, empathetic, and accurate. 
+Explain terms like "AMI" (Area Median Income) simply.
+If asked about specific eligibility, remind them this is an estimate and they must apply through official channels.
+Do not make up listings. Refer to general knowledge about NYC housing policy.`;
