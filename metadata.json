@@ -1,7 +1,5 @@
 {
   "name": "CASA NYC v2",
   "description": "A modernized affordable housing matching platform for NYC residents, featuring AI assistance and simplified eligibility checks.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
+  "requestFramePermissions": []
 }

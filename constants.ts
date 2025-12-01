@@ -39,7 +39,7 @@ export const MOCK_LISTINGS: Listing[] = [
   },
   {
     id: '103',
-    development_name: '595 Dean Street',
+    development_name: '595 Dean Street (TFC)',
     address: '595 Dean Street',
     borough: Borough.Brooklyn,
     neighborhood: 'Prospect Heights',
@@ -53,7 +53,7 @@ export const MOCK_LISTINGS: Listing[] = [
     amenities: ['Swimming Pool', 'Fitness Club', 'Dog Run', 'In-unit Washer/Dryer'],
     accessibility_features: ['Elevator', 'Fully Accessible'],
     pet_policy: 'Pets Allowed',
-    application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3540'
+    application_url: 'https://tfc.com/residential/595-dean-street/availability'
   },
   {
     id: '104',
@@ -180,6 +180,78 @@ export const MOCK_LISTINGS: Listing[] = [
     accessibility_features: ['Elevator', 'Wide Doorways'],
     pet_policy: 'Pets Allowed',
     application_url: 'https://housingconnect.nyc.gov/PublicWeb/details/3400'
+  },
+  {
+    id: '111',
+    development_name: '33 Bond Street (TFC)',
+    address: '33 Bond Street',
+    borough: Borough.Brooklyn,
+    neighborhood: 'Downtown Brooklyn',
+    total_units: 714,
+    affordable_units: 143,
+    min_income: 62000,
+    max_income: 195000,
+    rent_range: [1700, 3400],
+    application_deadline: '2025-04-20',
+    ami_percentage: 130,
+    amenities: ['Chelsea Piers Fitness', 'Roof Deck', 'Co-working Space', 'Pet Grooming'],
+    accessibility_features: ['Elevator', 'Wheelchair Accessible'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://tfc.com/residential/33bond/availability'
+  },
+  {
+    id: '112',
+    development_name: '4545 Center Blvd (TFC)',
+    address: '45-45 Center Boulevard',
+    borough: Borough.Queens,
+    neighborhood: 'Long Island City',
+    total_units: 820,
+    affordable_units: 165,
+    min_income: 32000,
+    max_income: 105000,
+    rent_range: [950, 1800],
+    application_deadline: '2025-05-15',
+    ami_percentage: 60,
+    amenities: ['Waterfront Esplanade', 'Tennis Courts', 'Volleyball Court', 'Children\'s Playroom'],
+    accessibility_features: ['Elevator', 'Accessible Common Areas'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://tfc.com/residential/4545-center-blvd/availability'
+  },
+  {
+    id: '113',
+    development_name: '2 Gold Street (TFC)',
+    address: '2 Gold Street',
+    borough: Borough.Manhattan,
+    neighborhood: 'Financial District',
+    total_units: 650,
+    affordable_units: 130,
+    min_income: 35000,
+    max_income: 110000,
+    rent_range: [1100, 2200],
+    application_deadline: '2025-06-01',
+    ami_percentage: 80,
+    amenities: ['Roof Deck', 'Fitness Center', 'Children\'s Playroom', 'Valet Service'],
+    accessibility_features: ['Elevator', 'Fully Accessible'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://tfc.com/residential/2-gold-street/availability'
+  },
+  {
+    id: '114',
+    development_name: '250 N 10th Street (TFC)',
+    address: '250 North 10th Street',
+    borough: Borough.Brooklyn,
+    neighborhood: 'Williamsburg',
+    total_units: 234,
+    affordable_units: 47,
+    min_income: 58000,
+    max_income: 165000,
+    rent_range: [1400, 2900],
+    application_deadline: '2025-05-30',
+    ami_percentage: 130,
+    amenities: ['Resident Lounge', 'Fitness Center', 'Courtyard', 'Bike Storage'],
+    accessibility_features: ['Elevator', 'Accessible Entrance'],
+    pet_policy: 'Pets Allowed',
+    application_url: 'https://tfc.com/residential/250n10/availability'
   }
 ];
 

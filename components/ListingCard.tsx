@@ -24,11 +24,13 @@ export const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
     return <CheckCircle2 size={12} className="mr-1 text-nyc-blue" />;
   };
 
-  // Generate Street View URL
-  // Uses 600x400 size, centered on the address
-  const streetViewUrl = `https://maps.googleapis.com/maps/api/streetview?size=600x400&location=${encodeURIComponent(`${listing.address}, ${listing.borough}, NY`)}&key=${process.env.API_KEY}`;
+  // Generate Street View URL only if API key is present
+  const apiKey = process.env.API_KEY;
+  const streetViewUrl = apiKey
+    ? `https://maps.googleapis.com/maps/api/streetview?size=600x400&location=${encodeURIComponent(`${listing.address}, ${listing.borough}, NY`)}&key=${apiKey}`
+    : '';
   
-  // Use provided image_url if available, otherwise fallback to Street View
+  // Use provided image_url if available, otherwise fallback to Street View (if key exists)
   const displayImage = !imgError ? (listing.image_url || streetViewUrl) : null;
 
   return (
